@@ -19,8 +19,7 @@ public class Main {
 		System.out.println("Setting up device and desired capabilities");
 		//com.linkedin.android
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "demo");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "demo_nexus");
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		driver = new AndroidDriver<MobileElement>(url, capabilities);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
